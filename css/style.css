@@ -613,7 +613,65 @@ body {
 
 }
 
+/******* Footer / bas de page *******/
 
+.footwrapper {
+
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-grey);
+
+
+}
+
+.footwrapper__menu {
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    flex: 1;
+
+}
+
+.fmenu__titles {
+
+    margin: 0;
+    font-weight: bold;
+
+}
+
+.fmenu__wraplist {
+
+    padding: 0;
+
+}
+
+.fwraplist__elements {
+
+    list-style-type: none;
+    line-height: 1.7em;
+
+}
+
+.fwraplist__elements:hover {
+
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+.fwraplist__elements a {
+
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.fwraplist__elements a:hover {
+
+    text-decoration: underline;
+
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
