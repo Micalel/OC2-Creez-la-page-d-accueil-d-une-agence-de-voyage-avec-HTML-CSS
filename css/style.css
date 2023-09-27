@@ -802,6 +802,31 @@ body {
 
 }
 
+@media (max-width: 930px) {
+
+
+    body {
+
+        margin: 0 25px 0 25px;
+
+    }
+
+    /**** Activités *****/
+
+    .activities__wrap {
+
+        width: 100%;
+
+    }
+
+    .awrap__cards img {
+
+        height: 200px;
+
+    }
+
+}
+
 /* Small devices (phones, less than 770px) */
 @media (max-width: 770.99px) {
 
