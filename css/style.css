@@ -678,6 +678,16 @@ body {
 
 /****** Media queries ***********/
 
+@media (max-width: 1150px) {
+
+    body {
+
+        margin: 0 25px 0 25px;
+
+    }
+
+}
+
 /* Medium devices (tablets, less/equal than 1026px) */
 @media (max-width: 1026px) {
 
