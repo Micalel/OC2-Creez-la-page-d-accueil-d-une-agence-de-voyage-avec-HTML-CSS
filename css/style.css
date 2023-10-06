@@ -406,11 +406,6 @@ body {
     cursor: pointer;
 }
 
-.hwrap__content:hover {
-
-    text-decoration: underline;
-}
-
 .cards__img {
 
     padding: 5px;
@@ -429,6 +424,13 @@ body {
     margin: 0;
 
 }
+
+.hwrap__content:hover {
+
+
+    text-decoration: underline;
+}
+
 
 .hwrap__content h3 {
 
