@@ -141,17 +141,23 @@ body {
 
 .researchbar__localisation {
 
-    color: var(--color-grey);
+    display: flex;
     width: 50px;
     height: 49px;
-    margin: 0px;
     border: 1px;
+    background-color: var(--color-grey);
     border-radius: 15px 0px 0px 15px;
 
 }
 
 .researchbar__localisation i {
 
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     font-size: 18px;
     color: var(--color-black)
 }
@@ -363,11 +369,10 @@ body {
 
 .hebergements__subtitles {
 
-
     display: flex;
     font-weight: bold;
     border: none;
-    background-color: var(--main-bg-color);
+    background: none;
     margin: 15px 0px 30px 30px;
     font-size: 18px;
 
@@ -388,21 +393,23 @@ body {
     width: calc((100% / 3) - 30px);
     background-color: white;
     margin: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 15px; 
     border: 1px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
 
 }
 
+.hcards__wrap a {
 
-.hcards__wrap:hover .hwrap__content h3 {
-
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 }
 
+.hwrap__content:hover {
 
+    text-decoration: underline;
+}
 
 .cards__img {
 
@@ -419,17 +426,20 @@ body {
 
     align-self: stretch;
     padding: 5px 15px 8px 15px;
+    margin: 0;
 
 }
 
 .hwrap__content h3 {
 
     margin: 0;
+    color: black;
 }
 
 .hwrap__content p {
 
     margin: 8px 0 0 0;
+    color: black;
 }
 
 .hwrap__rating {
@@ -498,8 +508,9 @@ body {
 }
 
 .pwrap__outershell {
-
+    
     display: flex;
+    text-decoration: none;
 
 }
 
@@ -522,22 +533,24 @@ body {
 
 }
 
+.pcontent_text:hover {
+
+    text-decoration: underline;
+
+}
+
 .ptext__title {
 
     margin: 0;
     padding: 10px 0 5px 0;
-
-}
-
-.ptext__title:hover {
-
-    text-decoration: underline;
+    color: black;
 
 }
 
 .ptext__subtitle {
 
     margin: 0;
+    color: black;
 }
 
 .pcard__rating {
@@ -582,6 +595,15 @@ body {
 
 }
 
+.awrap__cards a {
+
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+
+}
+
 .awrap__cards img {
 
     height: 87%;
@@ -607,11 +629,6 @@ body {
 
 }
 
-.awrap__cards:hover {
-
-    cursor: pointer;
-
-}
 
 /******* Footer / bas de page *******/
 
@@ -1197,4 +1214,13 @@ body {
         font-size: 16px;
     }
 
+}
+
+@media all and (max-width:362px){
+    .filters_filterswrapper{
+        flex-direction: column;
+    }
+    .filterswrapper__layer2{
+        width:100%; 
+    }
 }
