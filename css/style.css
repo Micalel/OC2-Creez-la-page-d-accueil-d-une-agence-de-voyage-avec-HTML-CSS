@@ -142,6 +142,9 @@ body {
 .researchbar__localisation {
 
     display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
     width: 50px;
     height: 49px;
     border: 1px;
@@ -152,12 +155,6 @@ body {
 
 .researchbar__localisation i {
 
-
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-    width: 100%;
     font-size: 18px;
     color: var(--color-black)
 }
@@ -400,11 +397,12 @@ body {
 
 }
 
-.hcards__wrap a {
+.hcards__wrap a{
 
     text-decoration: none;
     cursor: pointer;
 }
+
 
 .cards__img {
 
@@ -429,6 +427,7 @@ body {
 
 
     text-decoration: underline;
+    text-decoration-color: var(--color-black);
 }
 
 
@@ -512,13 +511,14 @@ body {
 .pwrap__outershell {
     
     display: flex;
+    width: 100%; /* 100% */
     text-decoration: none;
 
 }
 
 .pcards__wrap img {
 
-    width: 33%;
+    width: 33%; /* 33% of the parent */
     border-radius: 20px 0px 0px 20px;
     padding: 5px 0px 5px 5px;
     object-fit: cover;
@@ -530,7 +530,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    width: 67%;
     padding: 10px 5px 5px 15px;
 
 }
@@ -538,6 +537,7 @@ body {
 .pcontent_text:hover {
 
     text-decoration: underline;
+    text-decoration-color: var(--color-black);
 
 }
 
@@ -628,6 +628,7 @@ body {
 .acards__subtitles:hover {
 
     text-decoration: underline;
+    text-decoration-color: var(--color-black);
 
 }
 
@@ -697,7 +698,7 @@ body {
 
 /****** Media queries ***********/
 
-@media (max-width: 1150px) {
+@media all and (max-width: 1150px) {
 
     body {
 
@@ -708,7 +709,7 @@ body {
 }
 
 /* Medium devices (tablets, less/equal than 1026px) */
-@media (max-width: 1026px) {
+@media all and (max-width: 1026px) {
 
     .euro {
 
@@ -821,7 +822,7 @@ body {
 
 }
 
-@media (max-width: 930px) {
+@media all and (max-width: 930px) {
 
 
     body {
@@ -847,7 +848,7 @@ body {
 }
 
 /* Small devices (phones, less than 770px) */
-@media (max-width: 770.99px) {
+@media all and (max-width: 770.99px) {
 
     .euro {
 
@@ -1222,6 +1223,7 @@ body {
     .filters_filterswrapper{
         flex-direction: column;
     }
+
     .filterswrapper__layer2{
         width:100%; 
     }
